@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item 
+        android:id="@+id/btnAddDiary"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom|withText"
+        android:title="添加"/>
+    <item 
+        android:id="@+id/di_return"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom|withText"
+        android:title="返回"/>
+	 <item 
+        android:id="@+id/exit"
+        android:orderInCategory="3"
+        android:showAsAction="ifRoom|withText"
+        android:title="退出"/>
+	 
+	 <item 
+        android:id="@+id/watch_weather"
+        android:orderInCategory="4"
+        android:showAsAction="ifRoom|withText"
+        android:title="查看天气"/>
+	 <item 
+        android:id="@+id/watch_music"
+        android:orderInCategory="5"
+        android:showAsAction="ifRoom|withText"
+        android:title="听听音乐"/>
+
+</menu>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >    
+    <item 
+        android:id="@+id/music_scan"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom|withText"
+        android:title="歌曲扫描"/>
+    <item 
+        android:id="@+id/music_return"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom|withText"
+        android:title="返回"/>
+</menu>

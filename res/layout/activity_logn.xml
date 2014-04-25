@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity"
+    android:background="@drawable/bg" >
+
+    <!-- 步骤1：添加一个TextView组件，用于显示软件的名称及版本号
+         android布局中所有标签必须拥有两个固定的属性
+         android:layout_with  设置组件的宽  warp_content 文本自适应   fill_parent 容器自适应  match_parent 与fill_parent效果一致
+         android:layout_height 设置组件的高   warp_content 文本自适应   fill_parent 容器自适应  match_parent 与fill_parent效果一致
+     -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="心情日记v2.0"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="#33A1C9"
+        android:layout_marginTop="50dp"
+        />
+    
+    
+    <!-- 步骤3：添加一个容器LinearLayout，该容器局屏幕中间 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@drawable/login_border_bg"
+        android:padding="10dp">
+        
+        <!-- 步骤4：添加一个子容器Tablelayout 2行2列 -->
+        <TableLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:collapseColumns="2"
+            android:stretchColumns="1">
+            
+            <!-- 步骤5：添加一个标记TableRow，添加表格的行 -->
+            <TableRow 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                
+                <!-- 步骤6：添加一个TextView组件，用于显示文本信息 -->
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账号："
+                    android:textSize="15sp"
+                    android:textColor="#D2691E"/>
+                
+                <!-- 步骤7：添加一个EditText组件，用于添加一个输入文本框，该组件为交互类组件，必须为其添加一个ID号，便于程序中操作 -->
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:hint="请输入账号"
+                    android:textSize="12sp"
+                    android:textColor="#D2691E"
+                    android:background="@drawable/txt_bg"
+                    android:paddingLeft="10dp"/>
+                
+            </TableRow>
+            
+             <!-- 步骤8：添加一个标记TableRow，添加表格的行 -->
+            <TableRow 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">               
+               
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="密码："
+                    android:textSize="15sp"
+                    android:textColor="#D2691E"/>              
+               
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:inputType="textPassword"
+                    android:hint="请输入密码"
+                    android:textSize="12sp"
+                    android:textColor="#D2691E"
+                    android:background="@drawable/txt_bg"
+                    android:paddingLeft="10dp"/>                
+            </TableRow>
+            
+        </TableLayout>
+        
+        
+        <!-- 你的保存 -->
+        <LinearLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+           <!-- chexBox -->
+            <CheckBox
+		     android:id="@+id/save_u_p"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:checked="true"
+		     android:text="保存密码" />                       
+         </LinearLayout>
+               
+        <!-- 步骤9：添加一个LinearLayout布局，用于存放按钮组件 -->
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            
+
+            
+            <!-- 步骤10：添加一个Button按钮组件，用于完成注册跳转 -->
+            <Button 
+                android:id="@+id/sign"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:text="注册"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:background="@drawable/btn_reg_bg"
+                android:layout_marginRight="5dp"/>
+            
+            <!-- 步骤11：添加一个Button按钮组件，用于完成登录跳转 -->
+            <Button 
+                android:id="@+id/logn"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:text="登录"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:background="@drawable/btn_login_bg"
+                android:layout_marginLeft="5dp"/>
+            
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    
+    <!-- 步骤2：添加一个TextView组件，用于显示软件的版权信息 -->
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Copyright @ 2014-2014 LGY All Rights Reserved"
+        android:gravity="center_horizontal"
+        android:textSize="12sp"
+        android:textColor="#b88756"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

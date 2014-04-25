@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/weather"/>
+	<!-- 搜索 -->
+
+    <EditText
+        android:id="@+id/search_city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bar_edit_bg"
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="搜索城市"
+        android:singleLine="true"
+        android:textColor="#000" >
+        
+     </EditText>
+    
+    
+    
+    
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/city"
+        android:layout_below="@+id/city"
+        android:layout_marginTop="16dp"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/city"
+        android:layout_marginRight="43dp"
+ />
+
+    <TextView
+        android:id="@+id/ultraviolet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/air_quality"
+        android:layout_below="@+id/air_quality"
+        android:layout_marginTop="17dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ultraviolet"
+        android:layout_below="@+id/ultraviolet"
+        android:layout_marginTop="22dp"
+        android:textSize="25sp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weather"
+        android:layout_below="@+id/wind_direction"
+        android:layout_marginTop="18dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/wind_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weather"
+        android:layout_below="@+id/weather"
+        android:layout_marginTop="15dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/update_time"
+        android:background="#0000ff" />
+
+    <TextView
+        android:id="@+id/tomorrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/update_time"       
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tomorrow_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tomorrow_one"
+        android:layout_alignBottom="@+id/tomorrow_one"
+        android:layout_alignParentRight="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tomorrow_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tomorrow"
+        android:layout_alignBottom="@+id/tomorrow"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tomorrow_two"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView2"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tomorrow_one"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/humidity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/temparture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/date"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="22dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/air_quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignLeft="@+id/temparture"
+        android:text="" />
+
+</RelativeLayout>

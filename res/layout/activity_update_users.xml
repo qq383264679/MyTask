@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+    
+ <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_border_bg"
+        android:collapseColumns="2"
+        android:padding="10dp"
+        android:stretchColumns="1" >
+
+       <TableRow
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="账号:"/>
+
+            <EditText
+                android:id="@+id/update_username"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/txt_bg"
+                android:hint="请输入修改的账号"
+                android:paddingLeft="10dp"
+                android:textColor="#D2691E"
+                android:textSize="12sp" />
+        </TableRow>
+
+       <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp" >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="修改密码:"/>
+
+            <EditText
+                android:id="@+id/update_password"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/txt_bg"
+                android:hint="请输入修改的密码"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textColor="#D2691E"
+                android:textSize="12sp" />
+        </TableRow>
+
+       <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp" >
+			<TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="重复密码:"/>
+            <EditText
+                android:id="@+id/update_RePassword"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/txt_bg"
+                android:hint="在输一次密码"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textColor="#D2691E"
+                android:textSize="12sp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
